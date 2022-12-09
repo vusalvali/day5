@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,300;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+
+.div-nav {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.fa-bars {
+    display: none !important;
+}
+.div-logo {
+    width: 33%;
+}
+.div-logo a img{
+    width: 100px;
+    height: 1oopx;
+}
+.div-list{
+    width:33%
+}
+.div-list ul {
+    display: flex;
+    list-style: none;
+    
+
+}
+.div-list ul li {
+    margin-left: 30px;
+ }
+ .div-search-profile-heart {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    
+ }
+ .div-search-profile-heart div {
+    margin-right: 20px;
+ }
+
+
+ /* div main with big picture and 300% sale */
+
+.main {
+    min-height: 100vh;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/files/7.png?v=1657513501);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    
+    /* padding-left: 450px; */
+
+    
+}
+/* .main div:first-child {
+    font-size:15px;
+    
+} */
+.main div.button-on-main-img{
+    border: 1px solid black;
+
+}
+.main div.button-on-main-img a {
+    text-decoration: none;
+}
+
+/* Discovery Now  */
+
+.discovery {
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.discovery div.left {
+    margin-left:15px;
+   
+}
+.discovery div.right {
+    margin-left:30px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.discovery div.right h2 {
+    margin-top: 25px;
+
+}
+.discovery div.right h2.h2 {
+    margin-bottom: 25px;
+}
+.discovery div.left h2 span:first-child {
+    font-size: 26px;
+    font-weight: 600;
+}
+.discovery div.left h2 span:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.discovery div.left h2 span:nth-child(5) {
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 20px;
+}
+.discovery div.left h2 a {
+background-color: orange;
+height: 30px;
+width: 50px;
+}
+
+/* BEST SELLER
+Best Seller Product This Week! */
+.best-seller-heading{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.hr-bestseller {
+    border: 2px solid orangered;
+   height: 1px;
+   border-width: 1px;
+  width: 60px;
+}
+
+/* Products */
+
+/* .best-seller-products div.product div.img img.hide::hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+} */
+
+/* .img1 {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.1.png?v=1657702525);
+    width:200px;
+    height: 200px;
+}
+.best-seller-products div.product div.img1:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+}
+.best-seller-products div.product div.img2 {
+    
+    width:200px;
+    height: 200px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.1.png?v=1657702525);
+}
+.best-seller-products div.product div.img2:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+}
+.best-seller-products div.product div.img3 {
+    width:200px;
+    height: 200px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.1.png?v=1657702525);
+}
+.best-seller-products div.product div.img3:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+}
+.best-seller-products div.product div.img4 {
+    width:200px;
+    height: 200px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.1.png?v=1657702525);
+}
+.best-seller-products div.product div.img4:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+}
+.best-seller-products div.product div.img5 {
+    width:200px;
+    height: 200px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.1.png?v=1657702525);
+}
+.best-seller-products div.product div.img5:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+}
+.best-seller-products div.product div.img6 {
+    width:200px;
+    height: 200px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.1.png?v=1657702525);
+}
+.best-seller-products div.product div.img6:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+}
+.best-seller-products div.product div.img7 {
+    width:200px;
+    height: 200px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.1.png?v=1657702525);
+}
+.best-seller-products div.product div.img7:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+}
+.best-seller-products div.product div.img8 {
+    width:200px;
+    height: 200px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.1.png?v=1657702525);
+}
+.best-seller-products div.product div.img8:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/1.4.png?v=1657702525);
+} */
+/* .best-seller-products .product:hover {
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/14.4.png?v=1657703781);
+    height: 200px;
+    width:200px;
+
+}
+.best-seller-products .product:hover::after {
+    content: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/products/14.1.png?v=1657703781);
+    height: 200px;
+    width:200px;
+} */
+
+
+.best-seller-products {
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.product {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+.product img {
+    width: 300px;
+    height:200px;
+}
+.product .price {
+    width:300px;
+    height:100px;
+    text-align: center;
+}
+
+/* Before new arrivals */
+.before-new-arriwals{
+    width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.first {
+    width:45%;
+    height: 72vh;
+background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/files/11.png?v=1657512855);
+}
+.first img {
+
+}
+.second {
+    width:45%;
+    height: 72vh;
+    background-image: url(https://cdn.shopify.com/s/files/1/0620/9847/3138/files/12.png?v=1657513152);
+}
+.new-arrivals-heading {
+    margin-top: 50px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.new-arrivals-heading hr {
+    border: 2px solid orangered;
+    height: 1px;
+    border-width: 1px;
+   width: 60px;
+}
+.new-arrivals {
+height: 300px;
+width: 100%;
+display:flex;
+flex-wrap:wrap;
+justify-content: space-around;
+    
+}
+.new-arrivals-product {
+    width: 20%;
+    height:300px;
+
+}
+.new-arrivals-product img {
+    width: 300px;
+    height: 200px;
+}
+
+.arrival-price {
+    width:300px;
+    height:100px;
+    text-align: center;
+}
+
+
+/* OUR BLOGS HEADING*/
+
+.our-blogs-heading {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    
+}
+.hr-ourblogs-heading {
+    border: 2px solid orangered;
+   height: 1px;
+   border-width: 1px;
+  width: 60px;
+}
+
+
+@media only screen and (max-width:767px) {
+    .profile, .heart {
+        display: none;
+    }
+    .fa-bars {display:block !important; 
+        width: 30px;
+        height:30px;
+    }
+    
+}
+
